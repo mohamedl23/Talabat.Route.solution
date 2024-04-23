@@ -11,7 +11,7 @@ namespace Talabat.APIs
 		public static async Task Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
-
+			
 			#region Configure Services
 			// Add services to the container.
 
