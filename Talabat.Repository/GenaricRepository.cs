@@ -30,6 +30,7 @@ namespace Talabat.Repository
 
 		public async Task<IEnumerable<T>> GetAllWithSpecAsync(ISpecifiction<T> spec)
 		{
+
 			return await ApllaySpecifiction(spec).ToListAsync();
 		}
 
