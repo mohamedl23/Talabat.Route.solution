@@ -28,7 +28,8 @@ namespace Talabat.APIs.Controllers
 		[HttpGet("{id}")]
 		public async Task<ActionResult<Product>> GetProducts(int id)
 		{
-			var Product = await _productRepo.GetAsync(id);
+			var spec = new ProductWithBrandAndCategorySpecification(id);
+			var Product = await _productRepo.GetWithSpecAsync(id);
 			if (Product is null)
 			{
 				return NotFound();
