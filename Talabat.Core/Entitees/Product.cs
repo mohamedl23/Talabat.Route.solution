@@ -18,6 +18,7 @@ namespace Talabat.Core.Entitees
 		public int BrandId { get; set; }
         public ProductBrand Brand { get; set; } 
 
+
 	}
 
 }
