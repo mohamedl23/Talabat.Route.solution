@@ -11,6 +11,7 @@ using Talabat.Core.Specification.Product_Specs;
 namespace Talabat.APIs.Controllers
 {
 	
+
 	public class ProductsController : BaseApiController
 	{
 		private readonly IgenaricRepository<Product> _productRepo;

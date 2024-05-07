@@ -56,6 +56,7 @@ namespace Talabat.APIs
 			var Services = scope.ServiceProvider;
 			var _dbContext = Services.GetRequiredService<StoreContext>();
 
+
 			var loggerFactory = Services.GetRequiredService<ILoggerFactory>();
 
 			try
