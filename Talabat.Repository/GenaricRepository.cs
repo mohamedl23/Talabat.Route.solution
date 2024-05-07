@@ -11,6 +11,7 @@ using Talabat.Repository.Data;
 
 namespace Talabat.Repository
 {
+
 	public class GenaricRepository<T> : IgenaricRepository<T> where T : BaseEntity
 	{
 		private readonly StoreContext _dbContext;
@@ -19,6 +20,7 @@ namespace Talabat.Repository
         {
 			_dbContext = dbContext;
 		}
+
 		public async Task<IEnumerable<T>> GetAllAsync()
 		{
 			if (typeof(T) == typeof(Product))
